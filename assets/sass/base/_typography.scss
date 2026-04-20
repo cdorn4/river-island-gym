@@ -4,6 +4,22 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@font-face {
+	font-family: 'Barber Fill';
+	src: url('../webfonts/BarberFill.woff2') format('woff2'),
+	     url('../webfonts/BarberFill.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Agenda Medium';
+	src: url('../webfonts/AgendaMedium.woff2') format('woff2'),
+	     url('../webfonts/AgendaMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
 /* Type */
 
 	body, input, select, textarea {
