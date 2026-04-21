@@ -2051,6 +2051,7 @@
 
 		header.major h2 {
 			margin: 0;
+
 		}
 
 		header.major p {
@@ -2060,6 +2061,7 @@
 			margin: 1.5em 0 0 0;
 			padding: 1.5em 0 0 0;
 			font-style: normal;
+			text-align: left;
 		}
 
 /* Form */
@@ -3171,6 +3173,11 @@
 		padding: 12em 0 20em 0;
 		text-align: center;
 	}
+
+		#banner .logo img {
+			max-width: 100%;
+			height: auto;
+		}
 
 		#banner :last-child {
 			margin-bottom: 0;
