@@ -1380,6 +1380,13 @@
 		padding: 12em 0 20em 0;
 		text-align: center;
 
+		.logo {
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
 		:last-child {
 			margin-bottom: 0;
 		}
