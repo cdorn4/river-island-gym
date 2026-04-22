@@ -112,10 +112,14 @@
 					<h2>Sign up for Updates</h2>
 					<p>Be the first to know project updates, milestones and all things RIG.</p>
 
-					<form>
+					<form method="POST" action="https://api.web3forms.com/submit">
+						<input type="hidden" name="access_key" value="9e22d08b-8946-438e-a63d-2a989fbc5acf">
+						
+						<!-- Honeypot Spam Protection -->
+						<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 						<div class="row gtr-50 gtr-uniform">
 							<div class="col-8 col-12-mobilep">
-								<input type="email" name="email" id="email" placeholder="Email Address" />
+								<input type="email" name="email" id="email" placeholder="Email Address" required />
 							</div>
 							<div class="col-4 col-12-mobilep">
 								<input type="submit" value="Sign Up" class="fit" />
