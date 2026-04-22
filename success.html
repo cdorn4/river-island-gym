@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <!--
-	River Island Gym 
-	Contact Page
+	River Island Gym
+	Success Page
 -->
 <html lang="en">
 	<head>
-		<title>Contact Us | River Island Gym - Marshall, NC</title>
+		<title>Thank You | River Island Gym</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Get in touch with River Island Gym. We would love to hear from you about our community-building project in Madison County." />
+		<meta name="description" content="Thank you for contacting River Island Gym." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -34,37 +34,14 @@
 			<!-- Main -->
 				<section id="main" class="container medium">
 					<header>
-						<h2>Contact Us</h2>
-						<p>We would love to hear from you</p>
+						<h2>Thank You!</h2>
+						<p>Your message has been successfully sent.</p>
 					</header>
-					<div class="box">
-						<form id="contact-form" method="POST" action="https://api.web3forms.com/submit">
-							<input type="hidden" name="access_key" value="f17f6971-15b7-4fb8-a577-146b6deb03ed">
-
-							<!-- Honeypot Spam Protection -->
-							<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-							<div class="row gtr-50 gtr-uniform">
-								<div class="col-6 col-12-mobilep">
-									<input type="text" name="name" id="name" value="" placeholder="Name" required />
-								</div>
-								<div class="col-6 col-12-mobilep">
-									<input type="email" name="email" id="email" value="" placeholder="Email" required />
-								</div>
-								<div class="col-12">
-									<textarea name="message" id="message" placeholder="Enter your message" rows="6" required></textarea>
-								</div>
-								<div class="col-12">
-									<!-- hCaptcha Spam Protection -->
-									<div class="h-captcha" data-captcha="true"></div>
-								</div>
-								<div class="col-12">
-									<ul class="actions special">
-										<li><input type="submit" value="Send Message" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
+					<div class="box align-center">
+						<p>We appreciate you reaching out and supporting River Island Gym. We'll get back to you as soon as we can!</p>
+						<ul class="actions special">
+							<li><a href="index.html" class="button primary">Return Home</a></li>
+						</ul>
 					</div>
 				</section>
 
@@ -100,19 +77,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="https://web3forms.com/client/script.js" async defer></script>
-
-			<!-- Client-side hCaptcha Validation -->
-			<script>
-				const form = document.getElementById('contact-form');
-				form.addEventListener('submit', function(e) {
-					const hCaptcha = form.querySelector('textarea[name=h-captcha-response]');
-					if (!hCaptcha || !hCaptcha.value) {
-						e.preventDefault();
-						alert("Please check the 'I am human' captcha box before sending.");
-					}
-				});
-			</script>
 
 	</body>
 </html>
