@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <!--
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	River Island Gym 
+	Contact Page
 -->
 <html>
 	<head>
@@ -35,11 +34,15 @@
 				<section id="main" class="container medium">
 					<header>
 						<h2>Contact Us</h2>
-						<p>Tell us what you think about our little operation.</p>
+						<p>We would love to hear from you</p>
 					</header>
 					<div class="box">
-						<form method="POST" action="https://api.web3forms.com/submit">
+						<form id="contact-form" method="POST" action="https://api.web3forms.com/submit">
 							<input type="hidden" name="access_key" value="742a8823-c0cb-4627-820d-de7fdbda52d1">
+
+							<!-- Honeypot Spam Protection -->
+							<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
 							<div class="row gtr-50 gtr-uniform">
 								<div class="col-6 col-12-mobilep">
 									<input type="text" name="name" id="name" value="" placeholder="Name" required />
@@ -49,6 +52,10 @@
 								</div>
 								<div class="col-12">
 									<textarea name="message" id="message" placeholder="Enter your message" rows="6" required></textarea>
+								</div>
+								<div class="col-12">
+									<!-- hCaptcha Spam Protection -->
+									<div class="h-captcha" data-captcha="true"></div>
 								</div>
 								<div class="col-12">
 									<ul class="actions special">
@@ -82,6 +89,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://web3forms.com/client/script.js" async defer></script>
+
+			<!-- Client-side hCaptcha Validation -->
+			<script>
+				const form = document.getElementById('contact-form');
+				form.addEventListener('submit', function(e) {
+					const hCaptcha = form.querySelector('textarea[name=h-captcha-response]');
+					if (!hCaptcha || !hCaptcha.value) {
+						e.preventDefault();
+						alert("Please check the 'I am human' captcha box before sending.");
+					}
+				});
+			</script>
 
 	</body>
 </html>
