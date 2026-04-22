@@ -2933,7 +2933,7 @@
 	}
 
 	#header {
-		background: #444;
+		background: #414042;
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -3306,7 +3306,7 @@
 				font-size: 0.9em;
 			}
 
-			#footer .footer-contact p a {
+			#footer .footer-contact a {
 				border-bottom: none;
 			}
 
