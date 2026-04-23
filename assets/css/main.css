@@ -3498,12 +3498,6 @@
 				display: none;
 			}
 
-		/* Section/Article */
-
-			header br {
-				display: none;
-			}
-
 			header.major {
 				padding: 0 4em;
 			}
