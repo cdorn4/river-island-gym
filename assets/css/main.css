@@ -2335,6 +2335,11 @@
 				width: 100%;
 			}
 
+			.box .image.featured.fixed-ratio img {
+				aspect-ratio: 3 / 2;
+				object-fit: cover;
+			}
+
 			.box .image.featured:first-child {
 				border-radius: 6px 6px 0 0;
 				margin-bottom: 3em;

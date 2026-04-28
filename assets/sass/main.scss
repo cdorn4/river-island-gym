@@ -657,6 +657,11 @@
 					width: 100%;
 				}
 
+				&.fixed-ratio img {
+					aspect-ratio: 3 / 2;
+					object-fit: cover;
+				}
+
 				&:first-child {
 					border-radius: _size(border-radius) _size(border-radius) 0 0;
 					margin-bottom: $box-padding;
