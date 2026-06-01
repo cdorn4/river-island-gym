@@ -1112,6 +1112,18 @@
 			&:active {
 				background-color: darken(_palette(accent2, bg), 5);
 			}
+
+			&.small {
+				background-color: #6294CD;
+
+				&:hover {
+					background-color: lighten(#6294CD, 5);
+				}
+
+				&:active {
+					background-color: darken(#6294CD, 5);
+				}
+			}
 		}
 
 		&.disabled,
@@ -1170,20 +1182,20 @@
 		width: 100%;
 		z-index: 10000;
 
-		h1 {
+		.header-left-nav {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
 			color: inherit;
 			height: inherit;
-			left: 1.25em;
+			left: 0.75em;
 			line-height: inherit;
-			margin: 0;
-			padding: 0;
 			position: absolute;
 			top: 0;
-
-			a {
-				color: _palette(header, fg-bold);
-				font-weight: _font(weight-bold);
-				border: 0;
+			li {
+				display: inline-block;
+				padding-left: 0;
+				list-style: none;
 			}
 		}
 
@@ -1262,6 +1274,20 @@
 
 			&:active {
 				background-color: transparentize(_palette(header, fg-light), 0.5);
+			}
+
+			&.primary.small {
+				background-color: transparent;
+				box-shadow: inset 0 0 0 2px _palette(header, fg-light);
+				color: #ffffff !important;
+
+				&:hover {
+					background-color: transparentize(_palette(header, fg-light), 0.75);
+				}
+
+				&:active {
+					background-color: transparentize(_palette(header, fg-light), 0.5);
+				}
 			}
 		}
 
