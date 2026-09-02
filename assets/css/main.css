@@ -3000,20 +3000,30 @@
 	}
 
 	.header-left-nav {
+			display: flex;
+			align-items: center;
 			list-style: none;
 			margin: 0;
 			padding-left: 0;
 			color: inherit;
-			height: inherit;
+			height: auto;
 			left: 0.75em;
 			line-height: inherit;
 			position: absolute;
-			top: 0;
+			top: 50%;
+			transform: translateY(-50%);
 			li {
-				display: inline-block;
+				display: flex;
+				align-items: center;
 				padding-left: 0;
 				list-style: none;
 			}
+		}
+
+		.header-left-nav .button {
+			display: flex;
+			align-items: center;
+			line-height: 1;
 		}
 
 		#header h1 {
