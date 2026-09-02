@@ -128,16 +128,17 @@
 		font-size: 16pt;
 		font-weight: _font(weight);
 		line-height: 1.65em;
-		letter-spacing: -0.015em;
+		letter-spacing: 0;
 	}
 
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-bottom-color #{_duration(transition)} ease-in-out'));
 		border-bottom: dotted 1px;
-		color: _palette(accent2, bg);
+		color: #123d66;
 		text-decoration: none;
 
 		&:hover {
+			color: #99222e;
 			border-bottom-color: transparent;
 		}
 	}
@@ -156,10 +157,11 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
-		font-weight: _font(weight);
-		line-height: 1em;
+		color: _palette(fg);
+		font-weight: _font(weight-bold);
+		line-height: 1.25em;
 		margin: 0 0 (_size(element-margin) * 0.25) 0;
+		letter-spacing: -0.02em;
 
 		a {
 			color: inherit;
@@ -167,16 +169,16 @@
 		}
 	}
 
-	h2 {
+	h1, h2 {
 		font-size: 2.25em;
-		line-height: 1.5em;
-		letter-spacing: -0.035em;
+		line-height: 1.3em;
+		letter-spacing: -0.025em;
 	}
 
 	h3 {
 		font-size: 1.75em;
-		line-height: 1.5em;
-		letter-spacing: -0.025em;
+		line-height: 1.35em;
+		letter-spacing: -0.02em;
 	}
 
 	h4 {
