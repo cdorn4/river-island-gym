@@ -2470,9 +2470,21 @@
 			width: 100%;
 		}
 
+			.image.fit.medium {
+				max-width: 720px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
 			.image.fit img {
 				display: block;
 				width: 100%;
+			}
+
+			.image.fit.fixed-ratio img,
+			.image.fixed-ratio img {
+				aspect-ratio: 3 / 2;
+				object-fit: cover;
 			}
 
 /* List */
